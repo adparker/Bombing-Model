@@ -1,0 +1,15 @@
+Package: bombing
+Type: Package
+Version: 0.3
+Date: 2010-07-13
+Title: A collection of bombing functions
+Description: A spatial predictor that uses the bombing model,
+    conditioned on line segment observations of boolean random fields.
+Author: Andrew Parker <adparker@gmail.com>
+Maintainer: Andrew Parker <adparker@gmail.com>
+Depends: roxygen, ReadImages, grid, fields, lattice, ggplot2, doMC,
+    akima, forach, itertools
+License: GPL (>= 2)
+LazyLoad: yes
+Collate: 'bombing-package.R' 'utils.r' 'misc.r' 'bombing.r' 'test.r'
+    'figures.r'

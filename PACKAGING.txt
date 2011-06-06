@@ -1,0 +1,34 @@
+## From ~/Projects/phd/bombing/
+##
+> library (roxygen)
+
+> package.skeleton (name = 'bombing', code_files = c ('bombing-package.R', 'bombing.r', 'figures.r', 'misc.r', 'test.r', 'utils.r'), namespace = T, force = T)
+
+> roxygenize ('bombing', roxygen.dir='bombing', copy.package=F, unlink.target=F)
+
+$ R CMD check bombing
+$ R CMD build bombing
+> install.packages ('bombing_0.1.tar.gz', repos = NULL)
+
+
+##########
+
+## Copy over the NAMESPACE file:
+$ cp NAMESPACE bombingpack/
+
+## Fix the help files:
+$ rm bombingpack/man/*.Rd
+$ cp test.turn.crank.n.Rd new.line.segment.Rd bombingpack/man/
+
+## Check
+$ R CMD check bombingpack
+
+## Build
+$ R CMD build bombingpack
+
+## Install the R package
+$ R --vanilla
+> install.packages ('bombingpack_0.1.tar.gz', repos = NULL)
+
+
+

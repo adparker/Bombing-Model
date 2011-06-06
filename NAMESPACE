@@ -1,0 +1,7 @@
+export(test.turn.crank.n)
+export(new.line.segment)
+export(get.line.segment.observations.from.mat)
+export(createCTMCFunction)
+export(addCTMCNoise)
+export(find.abs.coords)
+export(is.line.segment)
